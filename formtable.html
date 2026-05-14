@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Form with Validation</title>
+</head>
+
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form>
+
+        <!-- Full Name -->
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your full name" required minlength="3">
+        <br><br>
+
+        <!-- Password -->
+        <label>Password:</label>
+        <input type="password" placeholder="Enter password" required minlength="6">
+        <br><br>
+
+        <!-- Email -->
+        <label>Email:</label>
+        <input type="email" placeholder="Enter valid email" required>
+        <br><br>
+
+        <!-- Age -->
+        <label>Age:</label>
+        <input type="number" min="18" max="60" required>
+        <br><br>
+
+        <!-- Phone -->
+        <label>Phone Number:</label>
+        <input type="tel" placeholder="Enter 10 digit number" pattern="[0-9]{10}" required>
+        <br><br>
+
+        <!-- Website -->
+        <label>Website:</label>
+        <input type="url" placeholder="https://example.com">
+        <br><br>
+
+        <!-- Search -->
+        <label>Search:</label>
+        <input type="search" placeholder="Search here">
+        <br><br>
+
+        <!-- Date -->
+        <label>Date of Birth:</label>
+        <input type="date" required>
+        <br><br>
+
+        <!-- Time -->
+        <label>Preferred Time:</label>
+        <input type="time" required>
+        <br><br>
+
+        <!-- Datetime -->
+        <label>Meeting Date & Time:</label>
+        <input type="datetime-local">
+        <br><br>
+
+        <!-- Color -->
+        <label>Favorite Color:</label>
+        <input type="color">
+        <br><br>
+
+        <!-- Range -->
+        <label>Volume:</label>
+        <input type="range" min="0" max="100">
+        <br><br>
+
+        <!-- Radio -->
+        <label>Gender:</label>
+
+        <input type="radio" name="gender" required> Male
+
+        <input type="radio" name="gender"> Female
+        <br><br>
+
+        <!-- Checkbox -->
+        <label>Hobbies:</label>
+
+        <input type="checkbox"> Reading
+        <input type="checkbox"> Music
+        <input type="checkbox"> Sports
+        <br><br>
+
+        <!-- File -->
+        <label>Upload Resume:</label>
+        <input type="file" required>
+        <br><br>
+
+        <!-- Textarea -->
+        <label>Address:</label><br>
+
+        <textarea rows="4" cols="30" required minlength="10" placeholder="Enter your address">
+</textarea>
+        <br><br>
+
+        <!-- Select -->
+        <label>Country:</label>
+
+        <select required>
+            <option value="">Select Country</option>
+            <option>India</option>
+            <option>Canada</option>
+            <option>USA</option>
+        </select>
+        <br><br>
+
+        <!-- Datalist -->
+        <label>Choose Browser:</label>
+
+        <input list="browsers" required>
+
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Edge">
+        </datalist>
+        <br><br>
+
+        <!-- Hidden -->
+        <input type="hidden" value="hiddenData">
+
+        <!-- Buttons -->
+
+        <input type="submit" value="Submit">
+
+        <input type="reset" value="Reset">
+
+        <input type="button" value="Click Me">
+
+    </form>
+
+     <!-- Basic Table Structure -->
+    <table border="4">
+
+        <!-- Caption -->
+        <caption><b>Student Marksheet</b></caption>
+
+        <!-- Table Head -->
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+
+            <tr>
+                <td>1</td>
+                <td>Shivani</td>
+                <td>Math</td>
+                <td>95</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Aman</td>
+                <td>Science</td>
+                <td>88</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Ravi</td>
+                <td>English</td>
+                <td>90</td>
+            </tr>
+
+            <!-- Colspan Example -->
+            <tr>
+                <td colspan="3"><b>Total Students</b></td>
+                <td>3</td>
+            </tr>
+
+        </tbody>
+
+        <!-- Table Footer -->
+        <tfoot>
+            <tr>
+                <td colspan="3"><b>Average Marks</b></td>
+                <td>91</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <br><br>
+
+    <!-- Rowspan Example -->
+    <h2>Rowspan Example</h2>
+
+    <table border="4">
+
+        <tr>
+            <th>Name</th>
+            <th>Subjects</th>
+        </tr>
+
+        <tr>
+            <td rowspan="3">Shivani</td>
+            <td>Math</td>
+        </tr>
+
+        <tr>
+            <td>Science</td>
+        </tr>
+
+        <tr>
+            <td>English</td>
+        </tr>
+
+    </table>
+
+    <br><br>
+
+    <!-- Simple Table -->
+    <h2>Simple Table Example</h2>
+
+    <table border="5">
+
+        <tr>
+            <th>Country Code</th>
+            <th>Country Name</th>
+        </tr>
+
+        <tr>
+            <td>IN</td>
+            <td>India</td>
+        </tr>
+
+        <tr>
+            <td>US</td>
+            <td>USA</td>
+        </tr>
+
+    </table>
+
+
+    <h1>Complete HTML Table Example</h1>
+
+     <h1 style="text-align:center;">HTML Table with All Important Attributes</h1>
+
+    <!-- Table with basic attributes -->
+    <table border="1" cellpadding="10" cellspacing="5" width="80%" align="center">
+
+        <!-- Caption -->
+        <caption><b>Student Complete Record</b></caption>
+
+        <!-- Table Head -->
+        <thead>
+            <tr>
+                <th colspan="5">Student Information Table</th>
+            </tr>
+
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+
+            <tr>
+                <td rowspan="3">1</td>
+                <td rowspan="3">Shivani</td>
+                <td rowspan="3">BCA</td>
+                <td>Math</td>
+                <td>95</td>
+            </tr>
+
+            <tr>
+                <td>English</td>
+                <td>90</td>
+            </tr>
+
+            <tr>
+                <td>Computer</td>
+                <td>98</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Aman</td>
+                <td>BCA</td>
+                <td>Math</td>
+                <td>85</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Ravi</td>
+                <td>BCA</td>
+                <td>Science</td>
+                <td>88</td>
+            </tr>
+
+        </tbody>
+
+        <!-- Table Footer -->
+        <tfoot>
+            <tr>
+                <td colspan="4"><b>Total Students</b></td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <td colspan="4"><b>Average Marks</b></td>
+                <td>92.3</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <br><br>
+
+    <!-- Another table using more attributes -->
+    <h2 style="text-align:center;">Simple Table with Alignment Attributes</h2>
+
+    <table border="1" align="center" width="60%">
+
+        <tr>
+            <th colspan="2">Country Data</th>
+        </tr>
+
+        <tr>
+            <th>Code</th>
+            <th>Name</th>
+        </tr>
+
+        <tr>
+            <td align="center">IN</td>
+            <td align="center">India</td>
+        </tr>
+
+        <tr>
+            <td align="center">US</td>
+            <td align="center">USA</td>
+        </tr>
+
+    </table>
+      <table border="5" cellpadding="10" cellspacing="5">
+
+        <!-- Table Headings -->
+        <tr>
+            <th>Name</th>
+            <th>Job Title</th>
+            <th>Email</th>
+        </tr>
+
+        <!-- Row 1 -->
+        <tr>
+            <td>Shivani</td>
+            <td>Web Developer</td>
+            <td>shivani@gmail.com</td>
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+            <td>Aman</td>
+            <td>Software Engineer</td>
+            <td>aman@gmail.com</td>
+        </tr>
+
+        <!-- Row 3 -->
+        <tr>
+            <td>Ravi</td>
+            <td>UI/UX Designer</td>
+            <td>ravi@gmail.com</td>
+        </tr>
+
+        <!-- Row 4 -->
+        <tr>
+            <td>Neha</td>
+            <td>Data Analyst</td>
+            <td>neha@gmail.com</td>
+        </tr>
+
+    </table>
+    <br><br>
+    <table border="3">
+    <tr>
+        <td rowspan="3">day</td>
+        <td colspan="3">seminar</td>
+
+    </tr>
+    <tr>
+        <td colspan="2">schedule</td>
+        <td rowspan="2">topic</td>
+    </tr>
+    <tr >
+        <td>begin</td>
+        <td>end</td>
+    </tr>
+    <tr rowspan="3">
+        <td rowspan="2">monday</td>
+        <td rowspan="2">8:00a.m.</td>
+        <td rowspan="2">5:00p.m.</td>
+        <td>introduction to xml</td>
+    </tr>
+    <tr>
+        <td>validity:DTD and relax Ng</td>
+    </tr>
+    <tr>
+        <td rowspan="3">tuesday</td>
+        <td>8:00a.m.</td>
+        <td>11:00 a.m.</td>
+        <td rowspan="2">xpath</td>
+    </tr>
+    <tr>
+        <td>11:00 a.m.</td>
+        <td>2:00 p.m.</td>
+    </tr>
+    <tr>
+        <td>2:00 p.m.</td>
+        <td>5:00 p.m.</td>
+        <td>xsl transformations</td>
+    </tr>
+    <tr>
+        <td>wednesday</td>
+        <td>8:00 a.m.</td>
+        <td>12:00 p.m.</td>
+        <td>xsl foemating objects</td>
+    </tr>
+  
+    </table>
+</body>
+
+</html>
